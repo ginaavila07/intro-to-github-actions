@@ -56,6 +56,6 @@ jobs:
      with:
       app-name: ${{ env.AZURE_WEBAPP_NAME }}
       publish-profile: ${{ secrets.AZURE_WEB_APP_PUBLISH_PROFILE }}# optional
-      package: ${{ github.workspace }}/target/ROOT.war# optional, default is.
+      package: target/ROOT.war 
 
     
