@@ -1,0 +1,19 @@
+name: Self-Hosted Runner Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-self-hosted:
+    runs-on: gh-actions-runner
+    steps:
+     - name: Checkout repository
+       uses: actions/checkout@v4
+
+
+     - name: Echo success message
+       run: echo "Self-hosted runner test successful"
+
+
